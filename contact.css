@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: url('black.jpg');
+  background-size: cover;
+} 
+nav{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background: #222222;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .home{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a::after{
+content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: red;
+  margin: auto;
+  transition: .4s;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: white;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+nav ul li a.active,
+nav ul li a:hover::after{
+ width: 100%;
+  color: yellow;
+}
+nav .button i{
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  height: 18vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content h2{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: grey;
+  border: 2px solid transparent;
+
+}
+h2{
+  border-radius: 30px;
+}
+.content ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 30px;
+}
+.content ul a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.content ul li:hover::after{
+  width: 100%;
+  background-color: red;
+}
+.description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+h1{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.my-contact{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: left;
+}
+.contact{
+  color: #fff;
+  max-width: 400px;
+  line-height: 30px;
+  padding-left: 90px;
+  font-size: 18px;
+}
+.contact i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+.form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+.contact, .form{
+  flex: 1;
+}
+.form h2{
+  color: #fff;
+  margin-bottom: 60px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form .text-box{
+  background: #d1e3d1;
+  height: 50px;
+  color: #fff;
+  padding: 12px;
+  width: calc(50% - 10px);
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  opacity: 0.9;
+
+}
+.form .text-box:first-child{
+  margin-bottom: 15px;
+
+}
+.form textarea{
+  color: #fff;
+  background: #d1e3d1;
+  border: none;
+  font-size: 15px;
+  padding: 12px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  opacity: 0.9;
+  margin-bottom: 20px;
+
+}
+.form .send{
+  color: #fff;
+  background: #13dd1a;
+  float: right;
+  border: none;
+  height: 80px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+  transition-property: background;
+}
+.form .send:hover{
+  background: #0582e3;
+}
+/* @media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+   .my-contact{
+    flex-direction: column;
+  }
+  .contact, .form{
+    margin: 30px 50px;
+  }
+  .form .text-box{
+    width: 100%;
+  }
+}  */
+@media (max-width: 920px) {
+  nav .button i{
+    display: block;
+  }
+  #click:checked ~ .button i:before{
+    /* content: "\f00d"; */
+  }
+  .form{
+    display: block;
+  }
+
+  body{
+    background-color: #222222;
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: orange;
+  }
+}
+@media (max-width: 920px){
+  .my-contact{
+    flex-direction: column;
+  }
+  .contact, .form{
+    margin: 30px 50px;
+  }
+  .form .text-box{
+    width: 100%;
+  }
+}  
