@@ -214,26 +214,10 @@ h1{
 .form .send:hover{
   background: #0582e3;
 }
-/* @media (max-width: 1000px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-   .my-contact{
-    flex-direction: column;
-  }
-  .contact, .form{
-    margin: 30px 50px;
-  }
-  .form .text-box{
-    width: 100%;
-  }
-}  */
+
 @media (max-width: 920px) {
   nav .button i{
     display: block;
-  }
-  #click:checked ~ .button i:before{
-    /* content: "\f00d"; */
   }
   .form{
     display: block;
