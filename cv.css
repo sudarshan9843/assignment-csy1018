@@ -184,9 +184,6 @@ p{
   nav .button i{
     display: block;
   }
-/*   #click:checked ~ .button i:before{
-    content: "\f00d";
-  } */
   body{
     background-color: #222222;
   }
