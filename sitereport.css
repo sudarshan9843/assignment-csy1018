@@ -64,6 +64,10 @@ nav .button i{
 input[type="checkbox"]{
   display: none;
 }
+.background{
+  height: 80px;
+  width: 80px;
+}
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
